@@ -1,0 +1,32 @@
+{
+  "name": "goldenfinger.js",
+  "version": "0.1.1",
+  "description": "Give you a goldenfinger as long as you need.",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/uglifyjs ./src/goldenfinger.js --compress --mangle -o ./dist/goldenfinger.min.js",
+    "lint": "./node_modules/.bin/eslint ./src/goldenfinger.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sivan/goldenfinger.js.git"
+  },
+  "keywords": [
+    "goldenfinger"
+  ],
+  "homepage": "https://github.com/sivan/goldenfinger.js#readme",
+  "author": {
+    "name": "Sivan",
+    "email": "sun.sivan@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sivan/goldenfinger.js/issues"
+  },
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "eslint": "^2.5.1",
+    "eslint-config-airbnb": "^6.2.0",
+    "uglify-js": "^2.6.2"
+  }
+}
